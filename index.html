@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="sidebar">
+            <div class="navegador">
+                <h3>Metropanel</h3>
+            </div>
+            <ul class="destacado">
+                <h5>Featured</h5>
+                <li><i class='bx bx-chalkboard'></i> <span class="icono">Charts</span></li>
+                <li><i class='bx bx-edit'></i><span class="icono">Articles</span></li>
+                <li><i class='bx bx-group'></i><span class="icono">Users</span></li>
+                <li><i class='bx bx-star'></i><span class="icono">Favorites</span></li>
+                <li><i class='bx bx-tachometer'></i><span class="icono">Speed</span></li>
+                <li><i class='bx bx-wrench'></i><span class="icono">Setting</span></li>
+            </ul>
+            <ul class="navegacion">
+                <h5>Navigation</h5>
+                <li><i class='bx bxs-dashboard'></i> <span class="icono">Dashboard</span></li>
+                <li><i class='bx bx-calendar'></i><span class="icono">Calendar</span></li>
+                <li><i class='bx bx-envelope'></i><span class="icono">Email</span></li>
+                <li><i class='bx bx-collection'></i><span class="icono">Pages</span></li>
+            </ul>
+            <ul class="otros">
+                <h5>All others</h5>
+                <li><i class='bx bx-coin-stack'></i><span class="icono">Revenue</span></li>
+                <li><i class='bx bx-photo-album'></i><span class="icono">Pictures</span></li>
+                <li><i class='bx bx-help-circle'></i><span class="icono">FAQs</span></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <div class="cta">
+                    <i class='bx bx-refresh'></i><i class='bx bx-envelope'></i><i class='bx bx-bell'></i>
+                </div>
+                <div class="buscar">
+                    <i class='bx bx-search'></i>
+                </div>
+                <div class="usuario">
+                    <i class='bx bx-user-circle'><span class="user"> <strong>Username</strong> </span> </i><i
+                        class='bx bx-cog'></i>
+                </div>
+            </div>
+            <div class="home">Home <strong><i class='bx bx-chevron-right'></i>Dashboard</strong></div>
+            <div class="actions">
+                <div class="ventas"><i class='bx bx-dollar-circle'></i> <span class="acciones">Ventas</span></div>
+                <div class="usuarios"><i class='bx bxs-group'></i><span class="acciones">Nuevos usuarios</span></div>
+                <div class="ordenes"><i class='bx bxs-cart'></i><span class="acciones">Nuevas órdenes</span></div>
+                <div class="visitas"><i class='bx bxs-show'></i><span class="acciones">Visitas</span></div>
+            </div>
+            <div class="resultados">
+
+
+                <div class="grafico">
+                    <canvas id="migrafico"></canvas>
+                </div>
+                <script>
+                    let meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio']
+                    let valores1 = [10, 15, 20, 25, 30, 35, 40, 45, 50]
+                    let valores2 = [55, 60, 65, 70, 75, 80, 85, 90, 95, 100]
+                    let barColors = ['red', 'blue']
+                    new Chart("migrafico", {
+                        type: "bar",
+                        data: {
+                            labels: meses,
+                            datasets: [
+                                { label: '',
+                                data: valores1,
+                                backgroundcolor: 'red'},
+                                {label: '',
+                                data: valores2,
+                                backgroundcolor: 'blue'}               
+                            ]
+                        }                        
+                    });
+
+                </script>
+
+                <div class="tareas">
+                    <strong class="hacer">To do</strong>
+                    <span class="todo">Do the dishes <input type="checkbox" name="" id=""></span>
+                    <span class="todo">Hit de gym <input type="checkbox" name="" id=""></span>
+                    <span class="todo">Walk the dog <input type="checkbox" name="" id=""></span>
+                    <span class="todo">Get wireframing! <input type="checkbox" name="" id=""></span>
+                    <span class="todo">Talk to the cat <input type="checkbox" name="" id=""></span>                
+                </div>
+            </div>
+            <div class="reportes">
+                <div class="world">
+                    <span><strong>Sales around world</strong></span>
+                    <span class="porciento"><input type="checkbox" name="" id="">40%</span>
+                    <span class="porciento"><input type="checkbox" name="" id="">12%</span>
+                    <span class="porciento"><input type="checkbox" name="" id="">11%</span>
+                    <span class="porciento"><input type="checkbox" name="" id="">10%</span>
+                    <span class="porciento"><input type="checkbox" name="" id="">18%</span>
+                </div>
+                <div class="site">
+                    <p><strong>Site report</strong></p>
+                <div>
+                    <div>
+                        <label for="Sales">Sales</label>
+                        <progress id="Sales" value="45" max="100" style="accent-color: rgb(4, 53, 4)"></progress><span class="percento">45%</span>
+                    </div>
+                    <div>                        
+                        <label for="Revenue">Revenue</label>
+                        <progress id="Revenue" value="68" max="100" class="progress-yellow"></progress><span class="percento">68%</span>
+ 
+                    </div>
+                    <div>                        
+                        <label for="New Orders">New Orders</label><progress id="New Orders" value="89" max="100" style="accent-color: rgb(100, 47, 4)"></progress><span class="percento">89%</span> 
+                    </div> 
+                                                    
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

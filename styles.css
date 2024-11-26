@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;    
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+   /*  margin: 0;
+    padding: 0; */
+    grid-template-columns: 25% 75%;
+}
+
+.sidebar {
+    background-color: rgb(74, 74, 216);
+    display: block;
+    width: 100%;    
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;      
+}
+
+li:hover{
+    background-color: rgba(255, 255, 255, 0.254);
+    transition: all .4s  ease-in-out;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+
+.navegador {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(12, 12, 114);
+    color: white;
+    align-content: center;
+    border-radius: 5px;
+}
+
+.destacado {
+    height: 220px;
+    margin-top: 20px;
+    list-style: none;      
+}
+
+.destacado i{
+    margin-right: 10px;
+}
+
+.navegacion {
+    height: 170px;
+    list-style: none;    
+}
+
+.navegacion i{
+    margin-right: 10px;
+}
+
+.otros {
+    height: 170px;
+    list-style: none;    
+}
+.otros i{
+    margin-right: 10px;
+}
+
+h3{
+    padding: 20px;
+    font-weight: bolder;
+}
+
+h5{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(12, 12, 114);
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+li{
+    margin-left: 20px;
+}
+
+.main {
+    display: grid;
+    width: 100%;    
+    margin: 0;
+    padding: 5px;    
+    background-color: rgb(228, 224, 224);   
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin-bottom: 0;        
+}
+
+.cta{
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(245, 212, 27);
+    border-radius: 5px;
+    margin-bottom: 0;  
+    flex: 1;   
+}
+
+.buscar{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: end;
+    margin: 5px;    
+    background-color: rgb(74, 74, 216);
+    border-radius: 5px;
+    margin-bottom: 0;
+    flex: 1;    
+}
+
+
+.usuario{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px;
+    background-color: rgb(228, 104, 104);
+    border-radius: 5px;
+    margin-bottom: 0;
+    flex: 1;  
+}
+
+.user{
+    font-size: small;
+    margin-bottom: 20px;
+    align-content: center;
+
+}
+
+.cta, .buscar, .usuario i{
+    font-size: 30px;    
+}
+
+.home{
+    width: 99%;
+    display: flex;
+    height: 30px;
+    margin-top: 0;  
+    padding: 15px;
+    margin-left: 5px;
+    align-items: center;
+    background-color: rgb(201, 199, 199);
+    border-radius: 5px;   
+}
+
+.actions{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin-bottom: 0;
+}
+
+.ventas{
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(25, 245, 153);
+    border-radius: 5px;
+    margin-top: 0;
+    flex: 1;
+}
+
+.usuarios{
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(177, 84, 84);
+    border-radius: 5px;
+    margin-top: 0;
+    flex: 1;
+}
+
+.ordenes{
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(63, 63, 156);
+    border-radius: 5px;
+    margin-top: 0;
+    flex: 1;
+}
+
+.visitas{
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(32, 72, 78);
+    border-radius: 5px;
+    margin-top: 0;
+    flex: 1;
+}
+
+
+.acciones{
+    font-size: small;
+}
+
+.resultados{
+    display: grid;
+    height: 250px;
+    margin-top: 0;   
+    grid-template-columns: 70% 30%;
+    margin-bottom: 0;
+    }
+
+.grafico{
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 0;
+}
+
+.tareas{
+    display: grid;
+    width: 290px;
+    height: 250px;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 5px;
+    grid-template-rows: repeat(5fr);
+    background-color: rgb(242, 248, 246);
+
+}
+
+.hacer{
+    background-color: rgb(74, 74, 216);
+    color: white;
+    padding: 5px;
+    align-content: center;
+    justify-content: center;
+    font-size: small;
+    width: 100%;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.todo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.reportes{
+    display: grid;
+    width: 100%;
+    height: 220px;
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-template-columns: 70% 30%;    
+}
+
+.world{
+    display: flex;   
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px; 
+    background-color: rgb(107, 168, 170);
+    justify-content: space-between;    
+}
+
+.porciento{
+    font-size: small;    
+}
+
+.site{
+    display: grid;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: 5px; 
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(207, 219, 221);        
+}
+
+label{
+    display: block;
+    margin-top: 0;
+    margin-left: 10px;
+    font-size: small;
+}
+progress{
+    height: 30px;
+    margin-left: 10px;      
+}
+.percento{
+    margin-left: 50px;
+    font-size: small;
+}
+
+.progress-yellow { height: 30px; margin-left: 10px; }
+.progress-yellow::-webkit-progress-bar { background-color: white; }
+.progress-yellow::-webkit-progress-value { background-color: yellow; }
+.progress-yellow::-moz-progress-bar { background-color: yellow}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .sidebar {
+        grid-column: 1;
+        grid-row: 1;
+        width: 100%;
+    }
+
+    .main {
+        grid-column: 1;
+        grid-row: auto auto;
+        width: 100%;
+    }
+
+    .cta,
+    .busca,
+    .usuario,
+    .ventas,
+    .usuarios,
+    .ordenes,
+    .visitas{
+        width: 100%;
+        margin: 5px;
+    }
+} 
